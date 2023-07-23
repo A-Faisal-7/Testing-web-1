@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @keyframes spin3D{
+            from {
+                transform: rotate3d(.5,.5,.5, 360deg);
+            }
+            to{
+                transform: rotate3d(0deg);
+            }
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background-color: #3F2E3E;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        h1{
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 5px;
+            background-color: #331D2C;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .spinner-box {
+            width: 900px;
+            height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+        }
+        .leo{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .blue-orbit {
+            width: 665px;
+            height: 665px;
+            border: 1px solid #91daffa5;
+            -webkit-animation: spin3D 3s linear
+            .2s infinite;
+        }
+
+        .green-orbit {
+            width: 520px;
+            height: 520px;
+            border: 1px solid #91ffbfa5;
+            -webkit-animation: spin3D 2s linear
+            0s infinite;
+        }
+
+        .red-orbit {
+            width: 390px;
+            height: 390px;
+            border: 1px solid #ffca91a5;
+            -webkit-animation: spin3D 1s linear
+             0s infinite;
+        }
+        .white-orbit {
+            width: 260px;
+            height: 260px;
+            border: 2px solid #ffffff;
+            -webkit-animation: spin3D 10s linear
+             0s infinite;
+        }
+        .w1 {
+            transform: rotate3D(1, 1, 1, 120deg);
+        }
+        .w2 {
+            transform: rotate3D(1, 2, .5, 120deg);
+        }
+        .w3 {
+            transform: rotate3D(.5, 1, 2, 120deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Thank You,For Choosing Us.<br>
+        We Will Contact You.</h1>
+
+    <div class="spinner-box"></div>
+    <div class="blue-orbot leo"></div>
+    <div class="green-orbit leo"></div>
+    <div class="red-orbit leo"></div>
+    <div class="white-orbit w1 leo">
+    </div><div class="white-orbit w2 leo">
+    </div><div class="white-orbit w3 leo">
+    </div>
+</body>
+</html>
